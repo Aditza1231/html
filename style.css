@@ -1,0 +1,20 @@
+h1,h2 {
+       color: blue;
+}
+
+table,td,th {
+       border: 2px solid black;
+
+}
+
+.text-center {
+         text-align: center;
+}
+#rounded-img {
+         border-radius: 90px;
+}
+
+/* unvisited link */
+a:link {
+   color : green
+ ; 	
