@@ -5,9 +5,9 @@
 <style>
 
 body {
- background-image: url("https://www.stiridecluj.ro/files/images/241/febe234c45e18f6c5666e9f2a9833b62.jpeg");
- background-attachment: fixed;
- background-position: center;
+ background: url(https://www.stiridecluj.ro/files/images/241/febe234c45e18f6c5666e9f2a9833b62.jpeg);
+ background-repeat: no-repeat;
+ background-size: 1920px 1080px;
 }
 
 table {
@@ -16,7 +16,7 @@ table {
   width: 100%;
 }
 h1,h2 {
-       color: blue;
+       color: red;
 }
 
 td, th {
@@ -39,6 +39,22 @@ Cuprins</a>
 		<h1>Nume: Almasan </h1>
                 <h2>Prenume: Adrian</h1>
                 <h3>Email: Almasan.Al.Alexandru@student.utcluj.ro</h1>
+
+}
+<p id="anNastere">2006</p>
+
+var an = document.getElementById("anNastere")
+
+const d = new Date()
+var year = d.getFullYear()
+
+#rounded -img {
+         border-radius: 30px;
+         display: block;
+         margin: 0 auto;
+}
+
+</html>
                 <img src="img_chania.jpg" width="400px" height="250px">
                 <h4>Asteptari legate de educatie: "Educatia nu este pregatirea pentru viata;educatia este viata insasi."
 
@@ -78,5 +94,36 @@ Cuprins</a>
           <h1>-fotbal</hi>
           <h1>-masini</hi>
 		                
-          </body>         
+          </body> 
+
+// Cache tge DOM
+var button = document.getElementById("button")
+
+var nume = document.getElementById("nume")
+
+// Add event listener to button
+button.addEventListener("click", altaViata)
+
+// Define function
+function altaViata() {
+        nume.innerHTML = "Software Engineer"
+        
+        asteptari.innerHTML = "<ul><li>Libertate financiara</li><li>Educatie superioara</li></ul>"
+
+        img.src = ""
+        img.style.opacity = "70"
+        img.style.height = "200px"
+        img style.width = "300px"
+        img style.border = "3px solid black"
+
+// Define the slideshow items (links, images, and captions)
+const slides = [
+  { link: "index.html", img: "https://www.thoughtco.com/thmb/Qzc1E4CZEa2rEe4q4dUn6QguRNs=/1500x1000/filters:fill(auto,1)/tawny-owl-56a09ffd3df78cafdaa36328.jpg", caption: "Page 1" },
+  { link: "index2.html", img: "https://tse3.mm.bing.net/th/id/OIP.jm1oZRQneHQTITLZGwPHuwHaE5?cb=ucfimg2ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3", caption: "Page 2" }
+];
+
+
 </html>
+
+
+
